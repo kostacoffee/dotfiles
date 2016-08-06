@@ -1,2 +1,3 @@
 ln -s /Users/kostacoffee/.dotfiles/init.vim /Users/kostacoffee/.config/nvim/init.vim
 ln -s /Users/kostacoffee/.dotfiles/.zpreztorc /Users/kostacoffee/.zpreztorc
+ln -s /Users/kostacoffee/.dotfiles/.zshrc /Users/kostacoffee/.zshrc
