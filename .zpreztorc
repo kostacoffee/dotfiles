@@ -1,0 +1,4 @@
+zstyle ':prezto:*:*' color 'yes'
+
+zstyle ':prezto:load' pmodule 'directory' 'utility' 'completion' 'git' 'prompt' 'syntax-highlighting'
+zstyle ':prezto:module:prompt' theme 'agnoster'
