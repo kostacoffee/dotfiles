@@ -44,6 +44,7 @@ set nojoinspaces        " Prevents inserting two spaces after punctuation on a j
 set clipboard=unnamedplus	" Allows vim to use system clipboard
 set tabstop=4
 set noexpandtab
+set list
 filetype plugin indent off
 syntax on
 colorscheme one
