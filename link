@@ -1,3 +1,4 @@
-ln -s /Users/kostacoffee/.dotfiles/init.vim /Users/kostacoffee/.config/nvim/init.vim
-ln -s /Users/kostacoffee/.dotfiles/.zpreztorc /Users/kostacoffee/.zpreztorc
-ln -s /Users/kostacoffee/.dotfiles/.zshrc /Users/kostacoffee/.zshrc
+ln -s /home/kosta/.dotfiles/init.vim /home/kosta/.config/nvim/init.vim
+ln -s /home/kosta/.dotfiles/zpreztorc /home/kosta/.zpreztorc
+ln -s /home/kosta/.dotfiles/zshrc /home/kosta/.zshrc
+ln -s /home/kosta/.dotfiles/tmux.conf /home/kosta/.tmux.conf

@@ -1,14 +1,6 @@
 " Enable Truecolor support
-if (empty($TMUX))
-    "For Neovim 0.1.3 and 0.1.4
-    if (has("nvim"))
-        let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-    endif
-
-    "For Neovim 0.1.5+ and Vim 7.4.1799+
-    if (has("termguicolors"))
-        set termguicolors
-    endif
+if (has("termguicolors"))
+	set termguicolors
 endif
 
 " Plug
