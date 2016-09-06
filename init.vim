@@ -29,6 +29,15 @@ Plug 'rakr/vim-one'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
+" actually ruining my life
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
 "settings
 set showcmd             " Show (partial) command in status line.
 set noshowmode          " Show current mode.
@@ -47,9 +56,13 @@ set noexpandtab
 set list
 filetype plugin indent off
 syntax on
+set background=dark
 colorscheme one
-set background=dark	
- 
+
+" better line movement
+nnoremap j gj
+nnoremap k gk
+inoremap {<cr> {<cr>}<c-o>O<tab>
 " air-line
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
