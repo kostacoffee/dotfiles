@@ -19,6 +19,8 @@ Plug 'https://github.com/digitaltoad/vim-pug'
 Plug 'Shougo/deoplete.nvim', {'do' : function('DoRemote')}
 Plug 'rakr/vim-one'
 Plug 'airblade/vim-gitgutter'
+Plug 'trusktr/seti.vim'
+Plug 'tyrannicaltoucan/vim-deep-space'
 call plug#end()
 
 "settings
@@ -39,13 +41,13 @@ set noexpandtab
 set list
 filetype plugin indent off
 syntax on
-colorscheme one
-set background=dark	
+colorscheme seti
+set background=dark
  
 " air-line
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='one'
+let g:airline_theme='deep_space'
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
