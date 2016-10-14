@@ -11,9 +11,10 @@ zstyle ':prezto:load' pmodule \
 		'completion' \
 		'osx' \
 		'git' \
+		'tmux' \
 		'syntax-highlighting' \
 		'history-substring-search' \
 		'autosuggestions' \
 		'prompt'
-zstyle ':prezto:module:prompt' theme 'agnoster'
 
+zstyle ':prezto:module:prompt' theme 'agnoster'
