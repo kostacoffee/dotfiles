@@ -17,7 +17,6 @@ Plug 'easymotion/vim-easymotion'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/digitaltoad/vim-pug'
 Plug 'Shougo/deoplete.nvim', {'do' : function('DoRemote')}
-Plug 'rakr/vim-one'
 Plug 'airblade/vim-gitgutter'
 Plug 'kostacoffee/seti.vim'
 Plug 'tyrannicaltoucan/vim-deep-space'
@@ -28,10 +27,6 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
 "settings
 set showcmd             " Show (partial) command in status line.
 set noshowmode          " Show current mode.
@@ -50,8 +45,8 @@ set noexpandtab
 set list
 filetype plugin indent off
 syntax on
-colorscheme seti
 set background=dark
+colorscheme seti
  
 " air-line
 let g:airline_powerline_fonts = 1
