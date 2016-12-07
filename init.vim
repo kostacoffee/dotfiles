@@ -27,6 +27,7 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
+inoremap {<cr> {<cr>}<c-o>O<tab>
 "settings
 set showcmd             " Show (partial) command in status line.
 set noshowmode          " Show current mode.
