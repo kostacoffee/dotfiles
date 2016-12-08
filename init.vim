@@ -1,6 +1,8 @@
 " Enable Truecolor support
 if (has("termguicolors"))
 	set termguicolors
+	" something something background color tmux
+	set t_ut =
 endif
 
 " Plug
@@ -9,7 +11,7 @@ function! DoRemote(arg)
 endfunction
 
 call plug#begin('~/.config/nvim/plugged')
-Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -19,15 +21,15 @@ Plug 'https://github.com/digitaltoad/vim-pug'
 Plug 'Shougo/deoplete.nvim', {'do' : function('DoRemote')}
 Plug 'airblade/vim-gitgutter'
 Plug 'kostacoffee/seti.vim'
-Plug 'tyrannicaltoucan/vim-deep-space'
 call plug#end()
 
-" actually ruining my life
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
+
 inoremap {<cr> {<cr>}<c-o>O<tab>
+
 "settings
 set showcmd             " Show (partial) command in status line.
 set noshowmode          " Show current mode.
@@ -48,12 +50,26 @@ filetype plugin indent off
 syntax on
 set background=dark
 colorscheme seti
- 
-" air-line
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='deep_space'
 
+" lightline
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component': {
+      \   'readonly': '%{&filetype=="help"?"":&readonly?"":""}',
+      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+      \   'fugitive': '%{(fugitive#head()!="")?" ".fugitive#head():""}'
+      \ },
+      \ 'component_visible_condition': {
+      \   'readonly': '(&filetype!="help"&& &readonly)',
+      \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+      \   'fugitive': '(fugitive#head()!="")'
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+      \ }
 " deoplete
 let g:deoplete#enable_at_startup = 1
-
