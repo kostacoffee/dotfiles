@@ -20,6 +20,7 @@ Plug 'Shougo/deoplete.nvim', {'do' : function('DoRemote')}
 Plug 'airblade/vim-gitgutter'
 Plug 'kostacoffee/seti.vim'
 Plug 'tyrannicaltoucan/vim-deep-space'
+Plug 'posva/vim-vue'
 call plug#end()
 
 " actually ruining my life
@@ -27,6 +28,9 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+inoremap {<cr> {<cr>}<c-o>O<tab>
 "settings
 set showcmd             " Show (partial) command in status line.
 set noshowmode          " Show current mode.
