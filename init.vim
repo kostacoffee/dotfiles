@@ -21,13 +21,15 @@ Plug 'https://github.com/digitaltoad/vim-pug'
 Plug 'Shougo/deoplete.nvim', {'do' : function('DoRemote')}
 Plug 'airblade/vim-gitgutter'
 Plug 'kostacoffee/seti.vim'
+Plug 'posva/vim-vue'
 call plug#end()
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
-
+nnoremap j gj
+nnoremap k gk
 inoremap {<cr> {<cr>}<c-o>O<tab>
 
 "settings
@@ -42,7 +44,6 @@ set modeline            " Enable modeline.
 set esckeys             " Cursor keys in insert mode.
 set linespace=0         " Set line-spacing to minimum.
 set nojoinspaces        " Prevents inserting two spaces after punctuation on a join (J)
-set clipboard=unnamedplus	" Allows vim to use system clipboard
 set tabstop=4
 set noexpandtab
 set list
@@ -71,5 +72,6 @@ let g:lightline = {
       \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' }
       \ }
+
 " deoplete
 let g:deoplete#enable_at_startup = 1
