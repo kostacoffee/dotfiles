@@ -55,6 +55,7 @@ colorscheme seti
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='lucius'
+let g:airline#extensions#tabline#enabled = 1
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
