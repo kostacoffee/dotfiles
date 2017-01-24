@@ -17,7 +17,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'https://github.com/tpope/vim-surround.git'
-Plug 'https://github.com/digitaltoad/vim-pug'
+Plug 'sheerun/vim-polyglot'
 Plug 'Shougo/deoplete.nvim', {'do' : function('DoRemote')}
 Plug 'airblade/vim-gitgutter'
 Plug 'kostacoffee/seti.vim'
