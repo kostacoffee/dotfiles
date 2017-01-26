@@ -8,4 +8,4 @@ export EDITOR="$VISUAL"
 
 alias vim=nvim
 
-export TERM='xterm-256color'
+export TERM='xterm-256color-italic'

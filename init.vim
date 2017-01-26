@@ -18,11 +18,19 @@ Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'https://github.com/tpope/vim-surround.git'
-Plug 'https://github.com/digitaltoad/vim-pug'
 Plug 'Shougo/deoplete.nvim', {'do' : function('DoRemote')}
 Plug 'airblade/vim-gitgutter'
 Plug 'kostacoffee/seti.vim'
+
+" language plugins
 Plug 'posva/vim-vue'
+Plug 'mitsuhiko/vim-python-combined'
+Plug 'pangloss/vim-javascript'
+Plug 'elzr/vim-json'
+Plug 'othree/html5.vim'
+Plug 'digitaltoad/vim-pug'
+Plug 'vim-jp/vim-cpp'
+Plug 'JulesWang/css.vim'
 call plug#end()
 
 nnoremap <up> <nop>
