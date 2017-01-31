@@ -7,5 +7,6 @@ export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 alias vim=nvim
+alias ssh='TERM=xterm-256color ssh'
 
 export TERM='xterm-256color-italic'

@@ -3,4 +3,4 @@ ln -s $HOME/.dotfiles/zpreztorc $HOME/.zpreztorc
 ln -s $HOME/.dotfiles/zshrc $HOME/.zshrc
 ln -s $HOME/.dotfiles/tmux.conf $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/tmux.osx.conf $HOME/.tmux.osx.conf
-tic xterm-256-colo-italic.terminfo
+tic xterm-256color-italic.terminfo
