@@ -1,6 +1,5 @@
 ln -s $HOME/.dotfiles/init.vim $HOME/.config/nvim/init.vim
-ln -s $HOME/.dotfiles/zpreztorc $HOME/.zpreztorc
-ln -s $HOME/.dotfiles/zshrc $HOME/.zshrc
 ln -s $HOME/.dotfiles/tmux.conf $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/tmux.osx.conf $HOME/.tmux.osx.conf
+ln -s $HOME/.dotfiles/fish.config $HOME/.config/fish/fish.config
 tic xterm-256color-italic.terminfo
