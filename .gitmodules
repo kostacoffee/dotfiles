@@ -1,0 +1,3 @@
+[submodule "fish/theme"]
+	path = fish/theme
+	url = https://github.com/kostacoffee/theme-bobthefish
