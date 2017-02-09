@@ -2,6 +2,8 @@
 ln -s $HOME/.dotfiles/init.vim $HOME/.config/nvim/init.vim
 ln -s $HOME/.dotfiles/tmux.conf $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/tmux.osx.conf $HOME/.tmux.osx.conf
+ln -s $HOME/.dotfiles/bashrc $HOME/.bashrc
+ln -s $HOME/.dotfiles/profile $HOME/.profile
 ln -s $HOME/.dotfiles/fish $HOME/.config/
 mkdir $HOME/.dotfiles/fish/functions
 ln -s $HOME/.dotfiles/fish/theme/* $HOME/.config/fish/functions/.
