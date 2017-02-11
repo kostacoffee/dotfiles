@@ -1,6 +1,7 @@
 # aliases
 alias vim="nvim"
 alias ssh="env TERM=xterm-256color ssh"
+alias bash="bash --norc"
 
 # env
 set VISUAL nvim
