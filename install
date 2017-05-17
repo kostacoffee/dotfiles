@@ -7,4 +7,7 @@ ln -s $HOME/.dotfiles/profile $HOME/.profile
 ln -s $HOME/.dotfiles/fish $HOME/.config/
 mkdir $HOME/.dotfiles/fish/functions
 ln -s $HOME/.dotfiles/fish/theme/* $HOME/.config/fish/functions/.
-tic xterm-256color-italic.terminfo
+tic xterm-256color.terminfo
+
+# CONTIDIONALY INSTALL WHEN ON MAC
+#tic tmux-256color.terminfo

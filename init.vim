@@ -1,13 +1,13 @@
 " Enable Truecolor support
 if (has("termguicolors"))
-	set termguicolors
-	" something something background color tmux
-	set t_ut =
+    set termguicolors
+    " something something background color tmux
+    set t_ut =
 endif
 
 " Plug
 function! DoRemote(arg)
-	UpdateRemotePlugins
+    UpdateRemotePlugins
 endfunction
 
 call plug#begin('~/.config/nvim/plugged')
@@ -31,6 +31,9 @@ Plug 'othree/html5.vim'
 Plug 'digitaltoad/vim-pug'
 Plug 'vim-jp/vim-cpp'
 Plug 'JulesWang/css.vim'
+
+" depolete plugins
+Plug 'tweekmonster/deoplete-clang2'
 call plug#end()
 
 nnoremap <up> <nop>
@@ -50,11 +53,10 @@ set textwidth=0         " Hard-wrap long lines as you type them.
 set shiftwidth=4        " Indentation amount for < and > commands.
 set noerrorbells        " No beeps.
 set modeline            " Enable modeline.
-set esckeys             " Cursor keys in insert mode.
 set linespace=0         " Set line-spacing to minimum.
 set nojoinspaces        " Prevents inserting two spaces after punctuation on a join (J)
-set tabstop=4
-set noexpandtab
+set tabstop=4           " Indentation amount for <tab>
+set expandtab           " going to the dark side
 set list
 filetype plugin indent off
 syntax on
