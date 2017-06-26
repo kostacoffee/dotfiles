@@ -20,12 +20,13 @@ Plug 'easymotion/vim-easymotion'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'Shougo/deoplete.nvim', {'do' : function('DoRemote')}
 Plug 'airblade/vim-gitgutter'
-Plug 'kostacoffee/seti.vim'
+Plug 'whatyouhide/vim-gotham'
 
 " language plugins
 Plug 'posva/vim-vue'
 Plug 'mitsuhiko/vim-python-combined'
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'elzr/vim-json'
 Plug 'othree/html5.vim'
 Plug 'digitaltoad/vim-pug'
@@ -61,11 +62,11 @@ set list
 filetype plugin indent off
 syntax on
 set background=dark
-colorscheme seti
+colorscheme gotham
 
 " lightline
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'gotham',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
