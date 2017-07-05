@@ -1,0 +1,55 @@
+# fix PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export LSCOLORS="Gxfxcxdxbxegedabagacad"
+export EDITOR="nvim"
+export VISUAL=$EDITOR
+
+# history
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE="$HOME/.zsh_history"
+setopt inc_append_history
+setopt share_history
+
+# fix fn-delete
+bindkey "^[[3~" delete-char
+
+# nvm
+source /usr/local/opt/nvm/nvm.sh
+
+# aliases
+alias vim="nvim"
+alias ls="ls -G"
+
+### PRETTY TERMINAL
+
+# tab completion highlighting
+autoload -Uz compinit
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+  compinit
+else
+  compinit -dC
+fi
+setopt menu_complete
+zstyle ':completion:*' menu select
+zstyle ':completion:*:default' list-colors ${(s.:.)LSCOLORS}
+
+# powerline9k
+POWERLEVEL9K_MODE='nerdfont-complete'
+source ~/.zsh/powerlevel9k/powerlevel9k.zsh-theme
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+
+# autosuggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=11'
+
+# syntax highlighting
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+### END PRETTY
+
+# do tmux stuff
+[[ $- != *i* ]] && return
+[[ -z "$TMUX" ]] && exec tmux new-session -A -s main
+
