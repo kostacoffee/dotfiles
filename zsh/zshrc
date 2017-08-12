@@ -11,8 +11,15 @@ HISTFILE="$HOME/.zsh_history"
 setopt inc_append_history
 setopt share_history
 
-# fix fn-delete
-bindkey "^[[3~" delete-char
+# key fixes
+bindkey -e
+bindkey "^[[3~" delete-char # fn-delete
+
+bindkey "${terminfo[khome]}" beginning-of-line # Home
+bindkey "" beginning-of-line # fn-left
+
+bindkey "${terminfo[kend]}" end-of-line # End
+bindkey "" end-of-line # fn-right
 
 # nvm
 source /usr/local/opt/nvm/nvm.sh
@@ -33,6 +40,9 @@ fi
 setopt menu_complete
 zstyle ':completion:*' menu select
 zstyle ':completion:*:default' list-colors ${(s.:.)LSCOLORS}
+
+# case insensitive tab completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 # powerline9k
 POWERLEVEL9K_MODE='nerdfont-complete'
