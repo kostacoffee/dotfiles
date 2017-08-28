@@ -27,6 +27,7 @@ source /usr/local/opt/nvm/nvm.sh
 # aliases
 alias vim="nvim"
 alias ls="ls -G"
+alias tmux="tmux new-session -A -s main"
 
 ### PRETTY TERMINAL
 
@@ -60,6 +61,6 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ### END PRETTY
 
 # do tmux stuff
-[[ $- != *i* ]] && return
-[[ -z "$TMUX" ]] && exec tmux new-session -A -s main
+#[[ $- != *i* ]] && return
+#[[ -z "$TMUX" ]] && exec tmux new-session -A -s main
 
